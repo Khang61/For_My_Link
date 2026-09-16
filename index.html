@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Link</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Theme/theme.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor" aria-hidden="true">
+    <span class="decor__item decor__item--1">🐰</span>
+    <span class="decor__item decor__item--2">🐱</span>
+    <span class="decor__item decor__item--3">🐱</span>
+    <span class="decor__item decor__item--4">🐰</span>
+    <span class="decor__item decor__item--5">🐰</span>
+    <span class="decor__item decor__item--6">🐱</span>
+    <span class="decor__item decor__item--7">🐱</span>
+    <span class="decor__item decor__item--8">🐰</span>
+    <span class="decor__item decor__item--9">🐰</span>
+    <span class="decor__item decor__item--10">🐱</span>
+    <span class="decor__item decor__item--11">🐱</span>
+    <span class="decor__item decor__item--12">🐰</span>
+    <span class="decor__item decor__item--13">🐰</span>
+    <span class="decor__item decor__item--14">🐱</span>
+  </div>
+
+  <h1 class="page-title">
+    <span class="page-title__pre">For<span class="page-title__spark">✨</span></span>
+    <span class="page-title__highlight">My Link</span>
+  </h1>
+
+  <main class="link-panel">
+    <div class="slide is-active" data-slide="1">
+      <p class="greeting">Helu, người đẹp 😽🌹</p>
+      <button class="nav-arrow" type="button" data-action="next" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="2">
+      <p class="question">Hôm nay người đẹp đi làm có mệt khum 🤔</p>
+      <div class="choice-group">
+        <button class="choice-btn" type="button" data-choice="yes">Có</button>
+        <button class="choice-btn" type="button" data-choice="no" data-target="12">Không</button>
+      </div>
+    </div>
+
+    <div class="slide" data-slide="3">
+      <p class="question">Là ai, là cái gì đã làm người đẹp mệt mỏi 😡</p>
+      <button class="nav-arrow" type="button" data-action="next" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="4">
+      <p class="question">Để tui xử nó</p>
+      <img class="feature-image" src="emote/angry%20rabbit.jpg" alt="thỏ giận dữ">
+      <button class="nav-arrow" type="button" data-action="next" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="5">
+      <p class="question">Tui là Peter Griffin aka ông mập :))))</p>
+      <video class="feature-video" src="Video/KhangVsMetmoi.mp4" controls></video>
+      <button class="nav-arrow" type="button" data-action="next" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="6">
+      <p class="question question--sm">Thật ra thì nếu có gì mệt mỏi muốn tâm sự thì tối t6 trước đánh cầu đi ăn nhẹ khum</p>
+      <img class="feature-image feature-image--sm" src="emote/Uwu.jpg" alt="uwu">
+      <div class="choice-group">
+        <button class="choice-btn" type="button" data-choice="yes">Có</button>
+        <button class="choice-btn choice-btn--dodge" type="button" id="dodgeNoBtn" data-choice="no">Không</button>
+      </div>
+    </div>
+
+    <div class="slide slide--compact" data-slide="7">
+      <p class="question question--sm">Người đẹp muốn ăn nhẹ hay uống nước?</p>
+      <div class="form-block">
+        <div class="option-list">
+          <div class="option-item">
+            <span class="option-item__label">Ăn nhẹ</span>
+            <button class="option-check" type="button" data-option="snack" aria-label="Chọn ăn nhẹ" aria-pressed="false">
+              <svg class="option-check__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="option-item">
+            <span class="option-item__label">Uống nước</span>
+            <button class="option-check" type="button" data-option="drink" aria-label="Chọn uống nước" aria-pressed="false">
+              <svg class="option-check__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="option-item">
+            <span class="option-item__label">Cả 2</span>
+            <button class="option-check" type="button" data-option="both" aria-label="Chọn cả 2" aria-pressed="false">
+              <svg class="option-check__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="option-note" id="optionNote" hidden>
+          <textarea class="option-note__input" id="optionNoteInput" rows="1" placeholder="Ghi cụ thể muốn ăn/uống gì nè..."></textarea>
+        </div>
+
+        <p class="hint-text">Nếu không điền thì Tài xế Khang sẽ tự chọn</p>
+      </div>
+
+      <button class="nav-arrow" type="button" id="formNextBtn" data-target="10" aria-label="Trang tiếp theo" disabled>
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="8">
+      <p class="question">Thiệt hả 😢</p>
+      <button class="nav-arrow" type="button" data-action="next" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="9">
+      <p class="question question--sm">Z thui, tui sẽ không làm phiền người đẹp. T6 vẫn qua chở người đẹp quánh cầu nha.</p>
+      <img class="feature-image" src="emote/Rose%20in%20Mouth.jpg" alt="mặt cắn hoa hồng">
+    </div>
+
+    <div class="slide" data-slide="10">
+      <p class="question question--sm">Chọn giờ đi người đẹp</p>
+      <input class="time-input" type="time" id="timeInput" value="19:00" aria-label="Chọn giờ đi người đẹp">
+      <button class="nav-arrow" type="button" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide" data-slide="11">
+      <p class="question question--sm">Hẹn người đẹp hôm đó nha :3</p>
+      <img class="feature-image" src="emote/Rose%20in%20Mouth.jpg" alt="mặt cắn hoa hồng">
+    </div>
+
+    <div class="slide" data-slide="12">
+      <p class="question question--sm">Yeah quả là người đẹp mạnh mẽ không gì làm khó được</p>
+      <img class="feature-image" src="emote/c2cbd9069197a316bc182195b789b734.jpg" alt="mạnh mẽ">
+      <button class="nav-arrow" type="button" aria-label="Trang tiếp theo">
+        <svg class="nav-arrow__icon" viewBox="0 0 48 32" aria-hidden="true">
+          <path d="M4 16H36M36 16L23 4M36 16L23 28" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="slide slide--compact" data-slide="13">
+      <p class="question question--sm">Thật ra thì Khang muốn rủ người đẹp đi ăn nhẹ trước khi quánh cầu :3</p>
+      <img class="feature-image feature-image--sm" src="emote/cute.jpg" alt="cute">
+      <div class="choice-group">
+        <button class="choice-btn" type="button" data-choice="yes" data-target="7">Có</button>
+        <button class="choice-btn choice-btn--dodge" type="button" data-choice="no" data-target="8">Không</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

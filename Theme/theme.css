@@ -1,0 +1,37 @@
+/* ============================================
+   THEME: Pink / Sweet Pastel
+   Đổi các biến bên dưới để đổi cả bộ nhận diện màu
+   ============================================ */
+:root {
+  /* Bảng màu hồng pastel */
+  --pink-50:  #fff5f8;
+  --pink-100: #ffe6ef;
+  --pink-200: #ffd0e2;
+  --pink-300: #ffb0cf;
+  --pink-400: #ff8ab8;
+  --pink-500: #ff6aa5;
+  --pink-600: #ec4f8c;
+  --pink-700: #c93b72;
+
+  /* Màu chữ */
+  --text-main: #6b2c42;
+  --text-soft: #9a5c76;
+  --text-on-primary: #ffffff;
+
+  /* Nền & bề mặt */
+  --bg-pattern: url("horizontally-vertically-repeatable-vector-seamless-pattern-with-japanese-vintage-plum-flowers_8130-2830.avif");
+  --bg-overlay: linear-gradient(180deg, rgba(255, 214, 231, 0.85) 0%, rgba(255, 182, 210, 0.75) 100%);
+  --surface: rgba(255, 255, 255, 0.55);
+  --surface-border: rgba(255, 255, 255, 0.8);
+
+  /* Hiệu ứng */
+  --shadow-soft: 0 20px 45px rgba(201, 59, 114, 0.18);
+  --shadow-title: 0 2px 0 rgba(255, 255, 255, 0.6);
+  --radius-lg: 32px;
+  --radius-md: 20px;
+
+  /* Font */
+  --font-heading: "Baloo 2", "Quicksand", sans-serif;
+  --font-script: "Caveat", cursive;
+  --font-body: "Quicksand", sans-serif;
+}
