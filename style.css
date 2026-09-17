@@ -553,3 +553,46 @@ body {
     stroke-dashoffset: 0;
   }
 }
+
+.replay-hint {
+  position: relative;
+  z-index: 1;
+  margin: 1.4rem 0 0;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  text-align: center;
+  max-width: min(400px, 90vw);
+}
+
+.replay-hint[hidden] {
+  display: none;
+}
+
+.credit {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--pink-300);
+  border-radius: 999px;
+  box-shadow: 0 4px 10px rgba(201, 59, 114, 0.18);
+  pointer-events: none;
+}
+
+.credit__text {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--pink-700);
+}
+
+.credit__icon {
+  font-size: 1rem;
+}

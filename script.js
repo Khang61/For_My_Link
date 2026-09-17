@@ -3,9 +3,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtns = document.querySelectorAll(".nav-arrow:not(.nav-arrow--send)");
   const choiceBtns = document.querySelectorAll(".choice-btn:not(.choice-btn--dodge)");
   const dodgeResetters = [];
+  const replayHint = document.getElementById("replayHint");
 
   function resetStrayDodgeButtons() {
     dodgeResetters.forEach((reset) => reset());
+  }
+
+  function syncReplayHint() {
+    if (!replayHint) return;
+    const activeSlide = panel.querySelector(".slide.is-active");
+    replayHint.hidden = !activeSlide?.classList.contains("slide--end");
   }
 
   function goToNextSlide() {
@@ -18,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
       activeSlide.classList.remove("is-active");
       nextSlide.classList.add("is-active");
     }
+
+    syncReplayHint();
   }
 
   function goToSlide(slideId) {
@@ -30,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
       activeSlide.classList.remove("is-active");
       targetSlide.classList.add("is-active");
     }
+
+    syncReplayHint();
   }
 
   nextBtns.forEach((btn) => {
@@ -213,5 +224,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     requestAnimationFrame(animateBar);
+  });
+
+  const declineNotifyBtn = document.getElementById("declineNotifyBtn");
+
+  declineNotifyBtn?.addEventListener("click", () => {
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        "Thông báo": "Người đẹp đã chọn KHÔNG đi ăn nhẹ / uống nước 😢",
+      }),
+    }).catch(() => {});
   });
 });
